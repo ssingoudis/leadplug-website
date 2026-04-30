@@ -1,28 +1,28 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { SlidersHorizontal, Code2, MailCheck } from "lucide-react";
+import { CalendarCheck, SlidersHorizontal, MailCheck } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 const steps: { num: string; icon: LucideIcon; title: string; desc: string }[] =
   [
     {
       num: "01",
-      icon: SlidersHorizontal,
-      title: "Funnel konfigurieren",
-      desc: "Wähle eine Branchenvorlage, passe Farben und Fragen an — fertig in Minuten.",
+      icon: CalendarCheck,
+      title: "Termin vereinbaren",
+      desc: "Kurzes Einrichtungsgespräch — wir besprechen deine Branche, Zielgruppe und was du dir vorstellst.",
     },
     {
       num: "02",
-      icon: Code2,
-      title: "Auf der Website einbinden",
-      desc: "Kopiere ein Code-Snippet und füge es in deine Website ein. WordPress, Wix, Typo3 — egal.",
+      icon: SlidersHorizontal,
+      title: "Einrichtung inklusive",
+      desc: "Dein Lead-Funnel wird konfiguriert — Branding, Fragen, Logik. Du erhältst ein fertiges Widget, das nahtlos zu deiner Seite passt.",
     },
     {
       num: "03",
       icon: MailCheck,
       title: "Anfragen empfangen",
-      desc: "Qualifizierte Leads landen direkt in deinem E-Mail-Postfach — strukturiert und sofort.",
+      desc: "Das Widget geht live. Qualifizierte Leads landen strukturiert in deinem Postfach — sofort und ohne weiteren Aufwand.",
     },
   ];
 
@@ -36,7 +36,7 @@ export default function StepsSection() {
 
   return (
     <section id="schritte" className="py-24 px-6">
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-300 mx-auto">
         <div className="text-center mb-20">
           <span className="block text-[12px] font-bold uppercase tracking-[0.08em] text-primary mb-2">
             SO FUNKTIONIERT'S
@@ -57,14 +57,14 @@ export default function StepsSection() {
               <button
                 key={i}
                 onClick={() => setActive(i)}
-                className="text-center cursor-pointer bg-transparent border-0 p-0 transition-all duration-[400ms]"
+                className="text-center cursor-pointer bg-transparent border-0 p-0 transition-all duration-400"
                 style={{
                   transform: isActive ? "scale(1.04)" : "scale(1)",
                   opacity: isActive ? 1 : 0.75,
                 }}
               >
                 <div
-                  className="w-[72px] h-[72px] rounded-[18px] mx-auto mb-5 flex items-center justify-center transition-all duration-[400ms]"
+                  className="w-18 h-18 rounded-[18px] mx-auto mb-5 flex items-center justify-center transition-all duration-[400ms]"
                   style={{
                     background: isActive ? "#4648d4" : "#fff",
                     border: isActive ? "2px solid #4648d4" : "1px solid #e7e7ee",
@@ -95,7 +95,7 @@ export default function StepsSection() {
                 <h4 className="text-[18px] font-semibold text-black mb-2">
                   {step.title}
                 </h4>
-                <p className="text-[14px] leading-[1.55] text-fg-3 max-w-[320px] mx-auto">
+                <p className="text-[14px] leading-[1.55] text-fg-3 max-w-80 mx-auto">
                   {step.desc}
                 </p>
 

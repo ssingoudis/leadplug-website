@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CalBookingButton from "./CalBookingButton";
 
 const navLinks = [
   { label: "Features", href: "#features" },
@@ -10,7 +11,7 @@ const navLinks = [
 export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-white/85 backdrop-blur-md overflow-hidden">
-      <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-300 mx-auto px-6 h-16 flex items-center justify-between">
         <Link
           href="/"
           className="flex items-center gap-2 no-underline"
@@ -35,12 +36,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        <a
-          href="#"
-          className="bg-primary hover:bg-[#3538b8] text-white px-5 py-2.5 rounded-full text-sm font-semibold no-underline transition-colors duration-150"
-        >
-          Kostenlos starten
-        </a>
+        <CalBookingButton />
       </div>
     </nav>
   );

@@ -6,27 +6,27 @@ import { ChevronDown } from "lucide-react";
 const items = [
   {
     q: "Brauche ich Programmierkenntnisse?",
-    a: "Nein. Du wählst eine Vorlage, passt Texte und Farben an und kopierst ein iFrame-Snippet auf deine Seite. Das dauert weniger als 5 Minuten.",
+    a: "Nein. Die komplette Einrichtung ist inklusive — du musst nur kurz Zugang zu deiner Website bereitstellen, den Rest erledigen wir.",
   },
   {
     q: "Was kostet SingoTec?",
-    a: "Du zahlst nur pro qualifiziertem Lead — keine monatliche Grundgebühr, kein Risiko. Die genauen Konditionen besprechen wir individuell.",
+    a: "Das erste Widget wird derzeit kostenlos eingerichtet — ohne Grundgebühr, ohne Vertragsbindung. Die genauen Konditionen besprechen wir im Einrichtungsgespräch.",
   },
   {
     q: "Ist das DSGVO-konform?",
-    a: "Ja. Hosting in Deutschland, keine Cookies, kein externes Tracking. Fonts werden selbst gehostet. Datenschutz ist bei uns Standard, nicht Addon.",
+    a: "Ja. Hosting in Deutschland, keine Cookies, kein externes Tracking. Fonts werden selbst gehostet. Datenschutz ist Standard, kein Addon.",
   },
   {
     q: "Funktioniert das mit meiner Website?",
-    a: "Ja — das Widget wird als iFrame eingebunden und funktioniert mit jeder Website: WordPress, Wix, Jimdo, Squarespace, Typo3 oder individuell.",
+    a: "Ja — das Widget wird als iFrame eingebunden und funktioniert mit jeder Website: WordPress, Wix, Jimdo, Squarespace, Typo3 oder einer individuellen Lösung.",
   },
   {
     q: "Wie erhalte ich die Anfragen?",
-    a: "Jede Anfrage wird dir sofort per E-Mail zugestellt — strukturiert mit allen Antworten. Eine CRM-Anbindung ist in Planung.",
+    a: "Jede Anfrage wird dir sofort per E-Mail zugestellt — strukturiert mit allen Antworten des Besuchers auf einen Blick.",
   },
   {
     q: "Kann ich das Widget an mein Branding anpassen?",
-    a: "Ja. Farben, Texte, Logo — alles ist konfigurierbar. Das Widget sieht aus, als gehöre es nativ zu deiner Seite.",
+    a: "Ja. Farben, Texte, Logo — alles wird auf dich abgestimmt. Das Widget sieht aus, als gehöre es nativ zu deiner Seite.",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function FAQSection() {
 
   return (
     <section id="faq" className="py-24 px-6 bg-surface">
-      <div className="max-w-[720px] mx-auto">
+      <div className="max-w-180 mx-auto">
         <div className="text-center mb-12">
           <span className="block text-[12px] font-bold uppercase tracking-[0.08em] text-primary mb-2">
             FAQ
