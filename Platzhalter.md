@@ -40,17 +40,36 @@ Den Platzhalter-Block durch das echte iFrame des Onboarding-Funnels ersetzen, so
 
 ---
 
-### [LINK] CTA-Button — "Kostenlos starten"
+### [LINK] CTA-Button — "Kostenlos einrichten lassen"
 **Dateien:** `components/Navbar.tsx`, `components/sections/HeroSection.tsx`
 **Was zu tun ist:**
-`href="#"` durch den finalen Link ersetzen — entweder ein externes Sign-up-Formular oder eine interne Route.
+Die Cal.eu-URL `https://cal.eu/singoscale/erstgespraech` durch den finalen SingoTec-Kalenderlink ersetzen.
+Außerdem den Link in `HeroSection.tsx` (falls vorhanden) ebenfalls aktualisieren.
 
 ---
 
-### [SEITE] Datenschutzerklärung
+### [ENV] Resend — API-Key & Absenderadresse
+**Datei:** `app/api/contact/route.ts`, `.env.local`
+**Was zu tun ist:**
+1. `.env.local` erstellen (falls nicht vorhanden) und eintragen:
+   ```
+   RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxx
+   ```
+2. In `app/api/contact/route.ts` die `from`-Adresse von `onboarding@resend.dev` auf eine
+   verifizierte eigene Domain ändern, z.B. `kontakt@singotec.de`.
+3. Die Empfängeradresse `stavrossingoudis@gmail.com` durch die finale Geschäfts-E-Mail ersetzen.
+
+---
+
+### [LEGAL] Datenschutzerklärung — Persönliche Angaben
 **Datei:** `app/datenschutz/page.tsx`
 **Was zu tun ist:**
-Den Platzhalter-Text durch die vollständige Datenschutzerklärung ersetzen.
+Die Platzhalter in Abschnitt 1 (Verantwortlicher) durch echte Daten ersetzen:
+- `[DEIN NAME]`
+- `[STRASSE, HAUSNUMMER]`
+- `[PLZ ORT]`
+- `[DEINE@EMAIL.DE]`
+Anschließend von einem Anwalt oder über https://datenschutz-generator.de prüfen lassen.
 
 ---
 
@@ -58,10 +77,3 @@ Den Platzhalter-Text durch die vollständige Datenschutzerklärung ersetzen.
 **Datei:** `app/impressum/page.tsx`
 **Was zu tun ist:**
 Den Platzhalter-Text durch das vollständige Impressum (Angaben gem. § 5 TMG) ersetzen.
-
----
-
-### [LINK] Footer — Kontakt
-**Datei:** `components/Footer.tsx`
-**Was zu tun ist:**
-`href="#"` beim "Kontakt"-Link durch die finale Ziel-URL ersetzen (z. B. `/kontakt` oder `mailto:`).

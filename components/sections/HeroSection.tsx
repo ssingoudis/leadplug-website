@@ -1,13 +1,14 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import CalBookingButton from "@/components/CalBookingButton";
 
 export default function HeroSection() {
   return (
     <section className="pt-32 pb-10 px-6">
-      <div className="max-w-[1200px] mx-auto grid grid-cols-1 min-[900px]:grid-cols-2 gap-12 items-center">
+      <div className="max-w-300 mx-auto grid grid-cols-1 min-[900px]:grid-cols-2 gap-12 items-center">
         {/* Left column */}
         <div>
           <div className="inline-flex items-center gap-2 bg-primary-light px-3.5 py-1.5 rounded-full text-[13px] font-semibold text-primary mb-6">
-            <span className="w-[7px] h-[7px] rounded-full bg-primary inline-block animate-pulse" />
+            <span className="w-1.75 h-1.75 rounded-full bg-primary inline-block animate-pulse" />
             Für Handwerksbetriebe
           </div>
 
@@ -22,18 +23,24 @@ export default function HeroSection() {
             <span className="text-primary">Direkt auf deiner Website.</span>
           </h1>
 
-          <p className="text-[18px] leading-[1.6] text-fg-3 max-w-[460px] mb-8">
-            Verwandle Website-Besucher in qualifizierte Leads — mit
-            interaktiven Formularen, die in 5 Minuten eingerichtet sind.
+          <p className="text-[18px] leading-[1.6] text-fg-3 max-w-115 mb-8">
+            Verwandle Website-Besucher in qualifizierte Leads — mit einem
+            interaktiven Widget, individuell für deinen Betrieb eingerichtet.
           </p>
 
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 bg-primary hover:bg-[#3538b8] text-white px-7 py-3.5 rounded-full text-[15px] font-semibold no-underline transition-colors duration-150"
-          >
-            Jetzt kostenlos starten
-            <ArrowRight size={18} />
-          </a>
+          <div className="flex flex-wrap items-center gap-3">
+            <CalBookingButton
+              label="Kostenlos einrichten lassen"
+              className="inline-flex items-center gap-2 bg-primary hover:bg-[#3538b8] text-white px-7 py-3.5 rounded-full text-[15px] font-semibold transition-colors duration-150"
+            />
+            <a
+              href="#schritte"
+              className="inline-flex items-center gap-1.5 text-[15px] font-semibold text-fg-3 hover:text-black transition-colors duration-150 px-3 py-3.5"
+            >
+              So funktionierts
+              <ArrowRight size={16} />
+            </a>
+          </div>
 
           <div className="flex flex-wrap items-center gap-4 mt-7 text-[13px] text-fg-3">
             <span className="flex items-center gap-1">
@@ -42,11 +49,11 @@ export default function HeroSection() {
             </span>
             <span className="flex items-center gap-1">
               <CheckCircle2 size={16} className="text-[#22c55e]" />
-              Keine Programmierkenntnisse
+              Keine Vertragsbindung
             </span>
             <span className="flex items-center gap-1">
               <CheckCircle2 size={16} className="text-[#22c55e]" />
-              In 5 Min. eingerichtet
+              Einsatzbereit in &lt;48h
             </span>
           </div>
         </div>
@@ -67,16 +74,16 @@ export default function HeroSection() {
                 <div className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]" />
                 <div className="w-2.5 h-2.5 rounded-full bg-[#27c93f]" />
               </div>
-              <span className="text-[11px] text-fg-4 font-medium tracking-[0.05em]">
+              <span className="text-[11px] text-fg-4 font-medium tracking-wider">
                 Live-Demo
               </span>
             </div>
             {/* Placeholder content */}
-            <div className="p-8 flex flex-col items-center justify-center min-h-[320px] text-center gap-3">
+            <div className="p-8 flex flex-col items-center justify-center min-h-80 text-center gap-3">
               <div className="w-12 h-12 rounded-xl bg-primary-light flex items-center justify-center">
                 <div className="w-6 h-6 rounded bg-primary opacity-60" />
               </div>
-              <p className="text-[13px] text-fg-4 max-w-[200px] leading-relaxed">
+              <p className="text-[13px] text-fg-4 max-w-50 leading-relaxed">
                 Live-Demo Widget wird hier eingebettet
               </p>
             </div>

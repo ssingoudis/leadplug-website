@@ -20,7 +20,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "SingoTec — Mehr Anfragen für Handwerksbetriebe",
   description:
-    "Einbettbare Sales-Funnels für Handwerksbetriebe. In 5 Minuten eingerichtet, DSGVO-konform.",
+    "Individuelle Lead-Widgets für Handwerksbetriebe — DSGVO-konform, einsatzbereit in unter 48h, kostenlos eingerichtet.",
 };
 
 export default function RootLayout({

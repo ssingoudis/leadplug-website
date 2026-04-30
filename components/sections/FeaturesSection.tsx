@@ -14,8 +14,8 @@ const features: { icon: LucideIcon; title: string; desc: string }[] = [
   },
   {
     icon: Code2,
-    title: "Ein Snippet, fertig",
-    desc: "Kopiere einen iFrame-Code und binde ihn auf jeder Website ein. WordPress, Wix, Jimdo — egal.",
+    title: "Einfache Einbindung",
+    desc: "Dein Widget wird als iFrame eingebunden — kompatibel mit WordPress, Wix, Jimdo, Squarespace und allem anderen.",
   },
   {
     icon: Mail,
@@ -37,7 +37,7 @@ const features: { icon: LucideIcon; title: string; desc: string }[] = [
 export default function FeaturesSection() {
   return (
     <section id="features" className="py-24 px-6">
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-300 mx-auto">
         <div className="text-center mb-14">
           <span className="block text-[12px] font-bold uppercase tracking-[0.08em] text-primary mb-2">
             VORTEILE
