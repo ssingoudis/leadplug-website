@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="max-w-300 mx-auto flex flex-wrap items-center justify-center min-[400px]:justify-between gap-4">
           <div className="flex items-center gap-2">
             <Logo className="w-9 h-9" />
-            <span className="font-semibold text-lg text-black">SingoTec</span>
+            <span className="font-semibold text-lg text-black">LeadPlug</span>
           </div>
 
           <div className="flex gap-6 text-[13px] text-fg-3">
@@ -38,7 +38,7 @@ export default function Footer() {
             </button>
           </div>
 
-          <span className="hidden min-[550px]:block text-[12px] text-fg-4">© 2025 SingoTec</span>
+          <span className="hidden min-[550px]:block text-[12px] text-fg-4">© 2025 LeadPlug</span>
         </div>
       </footer>
 

@@ -27,7 +27,7 @@ export default function Navbar() {
         >
           <Logo className="w-10 h-10" />
           <span className="font-bold text-base min-[350px]:text-xl text-black tracking-[-0.02em]">
-            SingoTec
+            LeadPlug
           </span>
         </button>
 

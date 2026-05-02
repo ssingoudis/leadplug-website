@@ -46,7 +46,7 @@ export default function FeaturesSection() {
             className="font-display font-semibold leading-[1.15] tracking-[-0.02em] text-black"
             style={{ fontSize: "clamp(28px, 4vw, 42px)" }}
           >
-            Warum SingoTec?
+            Warum LeadPlug?
           </h2>
         </div>
 

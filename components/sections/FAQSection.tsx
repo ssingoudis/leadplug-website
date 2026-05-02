@@ -9,7 +9,7 @@ const items = [
     a: "Nein. Die komplette Einrichtung ist inklusive — du musst nur kurz Zugang zu deiner Website bereitstellen, den Rest erledigen wir.",
   },
   {
-    q: "Was kostet SingoTec?",
+    q: "Was kostet LeadPlug?",
     a: "Das erste Widget wird derzeit kostenlos eingerichtet — ohne Grundgebühr, ohne Vertragsbindung. Die genauen Konditionen besprechen wir im Einrichtungsgespräch.",
   },
   {
