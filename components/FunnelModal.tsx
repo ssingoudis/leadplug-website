@@ -19,7 +19,7 @@ export default function FunnelModal({
       if (e.source !== iframeRef.current?.contentWindow) return;
       const h = parseInt(e.data.height, 10);
       if (h > 0 && iframeRef.current) {
-        iframeRef.current.style.height = (h + 36) + "px";
+        iframeRef.current.style.height = h + "px";
       }
     }
     window.addEventListener("message", handleMessage);

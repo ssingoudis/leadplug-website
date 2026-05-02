@@ -7,7 +7,10 @@ export default function CTASection() {
         className="max-w-225 mx-auto rounded-3xl"
         style={{
           background: "linear-gradient(135deg, #3234a8 0%, #5b5de8 100%)",
-          padding: "clamp(48px, 6vw, 72px) clamp(24px, 4vw, 60px)",
+          paddingTop: "clamp(40px, 5vw, 64px)",
+          paddingBottom: "clamp(20px, 3vw, 48px)",
+          paddingLeft: "clamp(20px, 4vw, 48px)",
+          paddingRight: "clamp(20px, 4vw, 48px)",
         }}
       >
         <h2
