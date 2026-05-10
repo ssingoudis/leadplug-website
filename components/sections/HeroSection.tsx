@@ -24,9 +24,9 @@ export default function HeroSection() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-slate-900 mb-6 leading-[1.1]">
-              Verwandle Besucher in{" "}
-              <span className="text-primary">qualifizierte Anfragen</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-slate-900 mb-6 leading-[1.1] text-balance">
+              Mehr Aufträge durch{" "}
+              <span className="text-primary whitespace-nowrap">qualifizierte Anfragen</span>
             </h1>
 
             {/* Subheadline */}

@@ -46,25 +46,25 @@ export default function FeaturesSection() {
             className="font-extrabold tracking-tight leading-[1.15] text-black"
             style={{ fontSize: "clamp(28px, 4vw, 42px)" }}
           >
-            Warum LeadPlug?
+            Was LeadPlug anders macht.
           </h2>
         </div>
 
-        <div className="grid gap-6" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))" }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {features.map((item) => {
             const Icon = item.icon;
             return (
               <div
                 key={item.title}
-                className="p-7 rounded-2xl border border-border bg-white transition-all duration-250 hover:shadow-[0_4px_24px_rgba(70,72,212,0.1)] hover:border-[#c8c8ff]"
+                className="p-6 rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200 cursor-default select-none"
               >
-                <div className="w-11 h-11 rounded-xl bg-primary-light flex items-center justify-center mb-4">
-                  <Icon size={22} className="text-primary" />
+                <div className="w-10 h-10 rounded-lg bg-primary-light flex items-center justify-center mb-4">
+                  <Icon size={20} className="text-primary" />
                 </div>
-                <h4 className="text-[17px] font-semibold text-black mb-2">
+                <h4 className="text-[15px] font-semibold text-slate-900 mb-1.5">
                   {item.title}
                 </h4>
-                <p className="text-[14px] leading-[1.55] text-fg-3 m-0">
+                <p className="text-[13px] leading-relaxed text-slate-500 m-0">
                   {item.desc}
                 </p>
               </div>

@@ -14,7 +14,7 @@ export default function Logo({ className }: { className?: string }) {
       </defs>
       <path
         d="M30 20 C70 0, 110 0, 130 22 C150 46, 120 60, 90 66 C60 72, 40 86, 42 104 C44 122, 84 124, 116 108"
-        fill="#4648d4"
+        fill="var(--color-primary)"
         filter="url(#logo-glow)"
       />
       <circle cx="48" cy="28" r="4" fill="#ffffff" />

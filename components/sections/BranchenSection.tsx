@@ -61,12 +61,6 @@ const branchen: {
   },
 ];
 
-const statusConfig: Record<Status, { bg: string; fg: string; label: string }> =
-  {
-    live: { bg: "#f0f0ff", fg: "#4648d4", label: "Verfügbar" },
-    custom: { bg: "#f1f5f9", fg: "#475569", label: "Individuell" },
-  };
-
 export default function BranchenSection() {
   return (
     <section id="branchen" className="py-24 px-6">
@@ -86,40 +80,26 @@ export default function BranchenSection() {
           </p>
         </div>
 
-        <div
-          className="grid gap-4"
-          style={{
-            gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
-          }}
-        >
-          {branchen.map(({ Icon, iconColor, iconBg, label, desc, status }) => {
-            const s = statusConfig[status];
-            return (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {branchen.map(({ Icon, iconColor, iconBg, label, desc }) => (
+            <div
+              key={label}
+              className="p-6 rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200 cursor-default select-none"
+            >
               <div
-                key={label}
-                className="p-6 rounded-2xl bg-white border border-border transition-all duration-250 hover:shadow-[0_4px_24px_rgba(70,72,212,0.1)] hover:border-[#c8c8ff]"
+                className="w-10 h-10 rounded-lg flex items-center justify-center mb-4"
+                style={{ background: iconBg }}
               >
-                <div
-                  className="w-10 h-10 rounded-[10px] flex items-center justify-center mb-3.5"
-                  style={{ background: iconBg }}
-                >
-                  <Icon size={20} style={{ color: iconColor }} />
-                </div>
-                <h4 className="text-[15px] font-semibold text-black mb-1.5">
-                  {label}
-                </h4>
-                <p className="text-[13px] leading-normal text-fg-3 mb-3.5">
-                  {desc}
-                </p>
-                <span
-                  className="inline-block text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-[0.04em]"
-                  style={{ background: s.bg, color: s.fg }}
-                >
-                  {s.label}
-                </span>
+                <Icon size={20} style={{ color: iconColor }} />
               </div>
-            );
-          })}
+              <h4 className="text-[15px] font-semibold text-slate-900 mb-1.5">
+                {label}
+              </h4>
+              <p className="text-[13px] leading-relaxed text-slate-500">
+                {desc}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
