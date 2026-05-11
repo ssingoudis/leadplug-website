@@ -246,7 +246,7 @@ export default function LegalModal({
       />
 
       {/* Modal */}
-      <div className="relative bg-white w-full rounded-t-2xl sm:max-w-3xl sm:rounded-2xl shadow-2xl flex flex-col h-dvh sm:h-auto sm:max-h-[85vh]">
+      <div className="relative bg-white w-full sm:max-w-3xl sm:rounded-2xl shadow-2xl flex flex-col h-dvh sm:h-auto sm:max-h-[85vh]">
         {/* Drag handle — mobile only */}
         <div className="flex justify-center pt-3 sm:hidden shrink-0">
           <div className="w-10 h-1 rounded-full bg-slate-200" />
